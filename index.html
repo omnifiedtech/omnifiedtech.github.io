@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <!-- scroll animation library -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/index.css" />
+        <title>Omnified Technologies</title>
+    </head>
+
+  <body>
+    <!--top navbar-->
+      <nav>
+          <p class="logo">Omnified Technologies</p>
+          <ul class="navUL">
+              <li onclick="scrollToDiv('whoarewe')" class="navElem">Who are we?</li>
+              <!-- <li onclick="scrollToDiv('pastwork')" class="navElem" class="">Past Work</li>-->
+              <li onclick="scrollToDiv('contact')" class="navElem">Contact Us</li>
+          </ul>
+      </nav>
+    <!--main content of the page-->
+    <div id="content">
+
+      <div class="parallax" style="background-image: url('/public/img/parallax/01.jpg');">
+
+          <h1 class="parallaxTitle">Omnified Technologies</h1>
+          <h2 class="parallaxSubtitle">Software Contracting</h2>
+          <h2 class="parallaxSubtitle">Web Apps | iOS & Android apps |  Desktop apps</h2>
+        <div class="blur"></div>
+
+
+      </div>
+      <div class="contentBack" id="contact">
+          <h2>Contact us</h2>
+          <hr>
+          <p><b>email</b> contact@omnifiedtech.com</p>
+          <p><b></b></p>
+      </div>
+      
+      <!-- <div class="parallax" style="background-image: url('/public/img/parallax/02.jpg');">
+           </div>-->
+      <div class="contentBack" id="testimonials">
+          <h2>Testimonials</h2>
+          <hr>
+          <p>
+              "Working with Omnified" - UHS Minithon
+          </p>
+          <p>
+              "<i>OmnifiedTech was able to handle my fairly large software product in a professional and easy to talk to manner</i>" - god
+          </p>
+      </div>
+      <!-- <div class="contentBack" id="pastwork" data-aos="fade-up">
+        <p>
+        </p>
+      </div> -->
+      <div class="contentBack" id="whoarewe">
+      </div>
+      <!--footers-->
+      <div class="footer">
+        <p>
+            Copyright © Omnified Technologies LLC 2018
+        </p>
+      </div>
+      <div class="centered"> <div onclick="scrollToDiv('contact')" class="btn hover-right right-float">Contact Us</div> </div>
+      <!-- scrolling animation javascript library -->
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      <script src="/public/js/index.js"></script>
+    </div>
+</body>
+</html>
