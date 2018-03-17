@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 
 /*CSS reset*/
@@ -29,19 +30,21 @@ time, mark, audio, video {
 body{
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    background-color: ECEFF1;
+    background-color: #E2E8E4;
     line-height: 2.0;
 }
 
 nav{
-    background-color: #ECEFF1;
+    background-color: #191919;
     width: 100%;
     height: 60px;
+    opacity: .9;
 
-    top: 0;
+    top: -60px;
     z-index:1;
     margin: 0px;
-    position: sticky;
+    position: fixed;
+    transition: top 0.3s;
 }
 
 /* base class for parallax scrolling elements */
@@ -74,24 +77,28 @@ nav{
 
 /*background for non-parallax content blocks*/
 .contentBack{
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     padding-left: 14em;
     padding-right: 14em;
-    background-color: #ECEFF1;
+    /*background-color: #ECEFF1;*/
+    background-color: #f1f3f3;
     font-size: 20px;
     line-height: 2.0;
+    color: #0d2a30;
 }
 
 .parallaxTitle{
-    padding-top: 3em;
-    padding-bottom: .5em;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30%;
+    line-height: 0.7;
     margin: 0px;
     font-size: 50px;
     text-align: center;
     z-index: 10;
 }
 .parallaxSubtitle{
+    font-family: 'Raleway', sans-serif;
     font-size: 30px;
     text-align: center;
     z-index: 10;
@@ -108,6 +115,17 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.contact{
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    color: #0F0F0F;
+    background-color: #ECEFF1;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .btn{
@@ -134,9 +152,9 @@ nav{
 }
 .hover-right:before {
     content: ""; /*don't change href*/
-    position: absolute;
     z-index: -1; /*keep transition*/
-
+    position: absolute;
+    
     /*default positioning*/
     top: 0;
     left: 0;
@@ -169,7 +187,7 @@ nav{
 .right-float{
     position: fixed;
     Bottom: 3em;
-    right: 1em;
+    right: 2em;
     box-shadow: 1px 1px 3px #000000;
 }
 
@@ -201,6 +219,11 @@ nav{
     transition: color .2s ease;
 }
 
+/*the logo in the navbar is the only image*/
+nav > img{
+
+}
+
 .logo{
     position: absolute;
     padding: 0;
@@ -219,6 +242,65 @@ h2{
 }
 
 hr{
-    border-top: 1px solid #8c8b8b;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid #0d2a30;
+    border-bottom: 1px solid #d8e0e0;
+}
+
+/*make the hr slightly smaller*/
+.hrWrapper{
+    width: 98%;
+    margin: 0 auto;
+}
+
+/*reduce load time on external fonts by using built in one with italics*/
+.italics{
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/*jump location, hidden is to stop the footer from being floated*/
+#whoarewe{
+    overflow: hidden;
+}
+
+.person{
+    width: 300px;
+    float: left;
+    margin: 30px;
+    text-align: center;
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    float: center;
+}
+
+.person > p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    line-height: 1.3;
+}
+
+.person > img{
+    width: 300px;
+}
+
+.role{
+    line-height: 1;
+    padding: 0;
+}
+
+#logo{
+    opacity: 1;
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    width: 50px;
+    z-index: 10;
 }
