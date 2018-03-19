@@ -90,7 +90,7 @@ nav{
 
 .parallaxTitle{
     font-family: 'Raleway', sans-serif;
-    padding-top: 30%;
+    padding-top: 15%;
     line-height: 0.7;
     margin: 0px;
     font-size: 50px;
@@ -199,6 +199,7 @@ nav{
 }
 
 .navElem{
+    color: #FFF;
     height: 100%;
     float: right;    
     list-style-type: none;
@@ -210,6 +211,7 @@ nav{
 .active{
     background: #4FC3F7;
     border-radius: 5px;
+    transition: background .2s ease;
 }
 
 .navElem:hover{
