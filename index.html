@@ -4,21 +4,20 @@
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css" />
         <title>Omnified Technologies</title>
+        <meta charset="UTF-8">
     </head>
 
   <body>
       <!--top navbar-->
 
       <nav id="nav">
-          <!-- <p class="logo">Omnified Technologies</p>-->
-
-          <ul class="navUL">
-              <li id="whoareweLi" onclick="scrollToDiv('whoarewe')" class="navElem">Who are we?</li>
-              <!-- <li onclick="scrollToDiv('pastwork')" class="navElem" class="">Past Work</li>-->
-              <li id="contactLi" onclick="scrollToDiv('contact')" class="navElem">Contact Us</li>
-
-          </ul>
       </nav>
+      <ul class="navUL">
+          <li id="whoareweLi" onclick="scrollToDiv('whoarewe')" class="navElem">Who are we?</li>
+          <!-- <li onclick="scrollToDiv('pastwork')" class="navElem" class="">Past Work</li>-->
+          <li id="contactLi" onclick="scrollToDiv('contact')" class="navElem">Contact Us</li>
+
+      </ul>
     <!--main content of the page-->
     <div id="content">
 
@@ -47,6 +46,33 @@
               "<i>OmnifiedTech was able to handle my fairly large software product in a professional and easy to talk to manner</i>" - god
           </p>
       </div>
+
+      <div class="contentBack" id="specialties">
+          <h2>Our Specialties</h2>
+          <div class="hrWrapper"><hr /></div>
+          <ul>
+              <li>Web apps
+                  <ul>
+                      <li>Node.js</li>
+                      <li>Flask & Django</li>
+                      <li>Angular.js</li>
+                  </ul>
+              </li>
+              <li>Mobile Apps
+                  <ul>
+                      <li>Native iOS Development</li>
+                      <li>Native Android Development</li>
+                  </ul>
+              </li>
+              <li>AWS
+                  <ul>
+                      <li>Lambda Serverless apps</li>
+                      <li>EC2 Server Management</li>
+                      <li>S3 Storage API</li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
       
       <div class="contentBack" id="whoarewe">
           <h2>Who are we?</h2>
@@ -54,7 +80,7 @@
           <div class="person" id="ben">
               <img src="img/suit.png"/ class="personImg">
               <p>Ben</p>
-              <p class="italics">18 year old programmer with 5 years of experience with building Web and iOS Apps, aswell as Linux development</p>
+              <p class="italics">18 year old programmer with 5 years of experience with building Web and iOS Apps, aswell as UNIX development</p>
               <div class="buttons">
                   <a href="https://github.com/avuxo/">
                       <img src="img/github.png" class="button"/>

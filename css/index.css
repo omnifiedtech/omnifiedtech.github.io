@@ -47,6 +47,27 @@ nav{
     transition: top 0.3s;
 }
 
+.navUL{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+}
+
+.navElem{
+    color: #FFF;
+    height: 100%;
+    float: right;    
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
 /* base class for parallax scrolling elements */
 .parallax{
     position: relative;
@@ -160,7 +181,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ABDEE0;/*transition color*/
+    background-color: #4FC3F7;/*transition color*/
 
     /*configure animation*/
     transform: scaleX(0);
@@ -172,7 +193,7 @@ nav{
     transition-timing-function: ease-out;
 }
 .hover-right:hover, .hover-right:focus, .hover-right:active {
-    color: #ECEFF1;
+    color: #FFF;
 }
 .hover-right:hover:before, .hover-right:focus:before, .hover-right:active:before {
     transform: scaleX(1);
@@ -189,23 +210,6 @@ nav{
     Bottom: 3em;
     right: 2em;
     box-shadow: 1px 1px 3px #000000;
-}
-
-.navUL{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-}
-
-.navElem{
-    color: #FFF;
-    height: 100%;
-    float: right;    
-    list-style-type: none;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
 }
 
 .active{
@@ -305,4 +309,12 @@ hr{
     top: 10px;
     width: 50px;
     z-index: 10;
+}
+
+li > ul{
+    margin-left: 40px;
+}
+
+#specialties > ul{
+    margin-left: 35px;
 }
