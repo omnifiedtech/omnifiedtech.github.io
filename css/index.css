@@ -192,7 +192,6 @@ nav{
     position: fixed;
     Bottom: 3em;
     right: 2em;
-    box-shadow: 1px 1px 3px #000000;
 }
 
 .active{
