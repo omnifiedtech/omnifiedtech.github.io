@@ -35,7 +35,6 @@ function scrollNav(){
         (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) ?
         '0px' : '-60px';
 
-    console.log(li[0] + ", " + li[1]);
     
     /*handle scroll highlighting*/
     if(window.pageYOffset < li[0] - 250){
@@ -43,7 +42,6 @@ function scrollNav(){
     }
     
     if(window.pageYOffset > li[1] - 500){
-        console.log('baka');
         elementsLi[1].classList.add("active");
         elementsLi[0].classList.remove("active");
     } else if(window.pageYOffset > li[0] - 350){
