@@ -30,7 +30,7 @@ time, mark, audio, video {
 body{
     font-family: 'Roboto', sans-serif;
     text-align: justify;
-    background-color: #E2E8E4;
+    background-color: #f1f3f3;
     line-height: 2.0;
 }
 
@@ -84,18 +84,6 @@ nav{
     z-index: -2;
 }
 
-.blur{
-    filter: blur(2px);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 100;
-}
-
 /*background for non-parallax content blocks*/
 .contentBack{
     padding-top: 1.5em;
@@ -132,11 +120,6 @@ nav{
     padding: 2em;
 }
 
-.centered{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 .contact{
@@ -225,11 +208,6 @@ nav{
     transition: color .2s ease;
 }
 
-/*the logo in the navbar is the only image*/
-nav > img{
-
-}
-
 .logo{
     position: absolute;
     padding: 0;
@@ -310,11 +288,55 @@ hr{
     width: 50px;
     z-index: 10;
 }
-
-li > ul{
-    margin-left: 40px;
+ 
+.technologies{
+    overflow: hidden;
 }
 
-#specialties > ul{
-    margin-left: 35px;
+.technology{
+    position: relative;
+    width: 250px;
+    float: left;
+    height: 250px;
+    margin: 5%;
+}
+
+.techImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.techOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+      
+    background-color: #f1f3f3;
+    opacity: 0;
+    transition: .3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.technology:hover .techOverlay{
+    opacity: 1;
+}
+
+
+.techOverlay > p{
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/*clear existing float property*/
+.clear {
+    clear: left;
+    display: block;
 }
