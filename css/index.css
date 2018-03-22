@@ -132,6 +132,50 @@ nav{
     text-align: center;
 }
 
+/*contact form*/
+
+.field{
+    background-color: transparent;
+    color: #0d2a30;
+    box-sizing: border-box;
+    border-radius: 0;
+    cursor: text;
+    border: 2px solid #0d2a30;
+    margin: 3px;
+}
+
+/*name*/
+#field1{
+    width: 194px;
+    height: 35px;
+}
+
+/*email*/
+#field2{
+    width: 194px;
+    height: 35px;
+}
+
+/*message*/
+#field3{
+    width: 400px;
+    height: 200px;
+}
+
+#contactField{
+    background-color: #0d2a30;
+    border: none;
+    color: f1f3f3;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 400px;
+    height: 45px;
+}
+
+
+/*/contact form*/
+
 .btn{
     font-size: 20px;
     width: 130px;
