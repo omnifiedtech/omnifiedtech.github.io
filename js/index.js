@@ -42,7 +42,6 @@ function scrollNav(){
     }
     
     if(window.pageYOffset > li[1] - 500){
-        console.log('baka');
         elementsLi[1].classList.add("active");
         elementsLi[0].classList.remove("active");
     } else if(window.pageYOffset > li[0] - 350){

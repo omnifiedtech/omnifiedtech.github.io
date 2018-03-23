@@ -27,6 +27,16 @@ time, mark, audio, video {
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: 01579B;
+}
+
+a:hover{
+    color: 0197CB;
+    transition: color .2s ease;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     text-align: justify;
@@ -134,7 +144,18 @@ nav{
 
 /*contact form*/
 
+.formWrapper{
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+#contactForm{
+
+}
+
 .field{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
     background-color: transparent;
     color: #0d2a30;
     box-sizing: border-box;
@@ -158,19 +179,27 @@ nav{
 
 /*message*/
 #field3{
+    font-family: 'Arial', 'Helvetica', sans-serif;
     width: 400px;
     height: 200px;
 }
 
 #contactField{
+    margin: 3px;
     background-color: #0d2a30;
     border: none;
     color: f1f3f3;
     text-decoration: none;
     cursor: pointer;
     font-size: 15px;
+    
     width: 400px;
     height: 45px;
+    transition: background .3s ease;
+}
+
+#contactField:hover{
+    background-color: #1d3a40;
 }
 
 
@@ -293,6 +322,11 @@ hr{
     overflow: hidden;
 }
 
+.people{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .person{
     width: 300px;
     float: left;
@@ -333,6 +367,8 @@ hr{
 }
  
 .technologies{
+    margin: 0 auto;
+    max-width: 70%;
     overflow: hidden;
 }
 
