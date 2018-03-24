@@ -329,8 +329,8 @@ hr{
 
 .person{
     width: 300px;
-    float: left;
-    margin: 30px;
+    display: inline-block;
+    margin: 15px;
     text-align: center;
 }
 
@@ -349,7 +349,7 @@ hr{
 }
 
 .person > img{
-    width: 300px;
+    width: 200px;
 }
 
 .role{
@@ -368,15 +368,13 @@ hr{
  
 .technologies{
     margin: 0 auto;
-    max-width: 70%;
-    overflow: hidden;
 }
 
 .technology{
     position: relative;
-    width: 250px;
-    float: left;
-    height: 250px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
     margin: 5%;
 }
 
