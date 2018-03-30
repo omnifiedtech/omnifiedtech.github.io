@@ -1,12 +1,63 @@
 <html>
     <head>
-        <!-- scroll animation library -->
-        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css" />
         <title>Omnified Technologies</title>
+        <!-- Animate on scroll library -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <meta charset="UTF-8">
     </head>
 
+<<<<<<< HEAD
+    <body>
+        <div id="content">
+            <div class="headerImage" style="background-image: url('../img/headerimg.jpeg');"></div>
+            
+            <div class="section darkSection">
+                <h1 id="namedHeader">Omnified Technologies</h1>
+                <h2 id="namedSubheader">Web Contracting & Consulting</h2>
+            </div>
+            
+            <div class="section" id="section2">
+                <div data-aos="fade-left">
+                    <h1 class="sectionTitle">What we work with</h1>
+                    <!-- Technologies we use -->
+                    <div id="technologies" >
+                        <div class="technology">
+                            <p class="techDescription">
+                                We utilize Node.js to create modern solutions for real world problems
+                            </p>
+                            <div class="button">Learn More</div>
+                        </div>
+                        <div class="technology">
+                            <p class="techDescription">
+                                We use React.js to create adaptive, reactive, and modern webpages
+                            </p>
+                        <div class="button">Learn More</div>
+                        </div>
+                        <div class="technology">
+                            <p class="techDescription">
+                                We utilize Amazon Web Services to create infinitely scalable solutions.
+                            </p>
+                        <div class="button">Learn More</div>
+                        </div>
+                        <div class="technology">
+                            <p class="techDescription">
+                                We create mobile-friendly sites to integrate your solutions everywhere.
+                            </p>
+                            <div class="button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section darkSection">
+                <div class="headerImage" style="background-image: url('../img/road.jpg');"></div>
+            </div>
+            <!-- Contact us -->
+            <div class="section" id="contactSection">
+                <div data-aos="zoom-out">
+                    <h1 class="sectionTitle">Contact us</h1>
+=======
   <body>
       <!--top navbar-->
 
@@ -125,18 +176,23 @@
               </form>
           </div>
       </div>
+>>>>>>> cb1a94e791c0b3a4283936b3e117c606251f165a
 
-      <!--footers-->
-      <div class="footer">
-        <p>
-            Copyright © Omnified Technologies LLC 2018
-        </p>
-      </div>
-      <div onclick="scrollToDiv('contact')" class="btn hover-right right-float">Contact Us</div>
-      <img id="logo" src="img/logo.png"/>
-      <!-- scrolling animation javascript library -->
-      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-      <script src="js/index.js"></script>
-    </div>
-</body>
+                    <div class="formWrapper">
+                        <form id="contactForm">
+                            <input type="text" class="field" id="field1" required name="name" placeholder="Name *">
+                            <input type="email" class="field" id="field2" required name="email" placeholder="email *"><br>
+                            <textarea class="field" id="field3" name="Message" required placeholder="Message"></textarea><br>
+                            <input id="contactField" class="button" type="submit" value="Contact us!">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Copyright © Omnified Technologies 2018
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
