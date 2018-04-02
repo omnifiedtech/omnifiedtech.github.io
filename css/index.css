@@ -87,29 +87,24 @@ footer{
 .namedHeader{
     width: 200px;
     position: absolute;
-    left: 50%;
-    margin-left: -195px;
-    border: 0px solid black;
     
+    margin-left: 10%;
+    border: 0px solid black;
     white-space: nowrap;
-
     margin-top: 19%;    
-    color:#b0c4de;
-    font-size: 40px;
+    color:#fff;
+    
 }
-
 .namedSubheader{
     width: 200px;
     position: absolute;
-    left: 50%;
-    margin-left: -60px;
-    border: 0px solid black;
     
+    margin-left: 20%;
+    border: 0px solid black;
     white-space: nowrap;
-
     margin-top: 23%;    
-    color:#b0c4de;
-    font-size: 20px;
+    color:#fff;
+    
 }
 
 #technologies{
