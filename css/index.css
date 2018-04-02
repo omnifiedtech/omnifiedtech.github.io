@@ -20,24 +20,32 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
 }
 
 body{
     background-color: #f1f1f1;
     font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat ;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
     
 }
 
 footer{
-    position: relative;
-    left: 10%;
-    font-size: 15px;
-    bottom: 45px;
+    width: 100%;
+    margin: center;
+    text-align: left;
 }
-
+.footercontent{
+    margin-left:10%; 
+    padding-bottom: 5px;
+}
 .content{
-    position: relative;
-    max-width: 80%;
+    
+    max-width: 100%;
 }
 
 /*fullscreen section*/
@@ -54,17 +62,13 @@ footer{
 
 .headerImage{
     position: absolute;
-    right:0;
+
     opacity: 0.03;
     width: 100%;
     height: 100%;
     z-index: 3;
     animation: fadeHeaderImg 2s;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
 }
 
@@ -80,22 +84,32 @@ footer{
 }
 
 /*header text*/
-#namedHeader{
-    color: #f1f1f1;
-    font-size: 45px;
-    position: relative;
-    top: 50%;
-    left: 10%;
-    animation: fadein 4s;
+.namedHeader{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -195px;
+    border: 0px solid black;
+    
+    white-space: nowrap;
+
+    margin-top: 19%;    
+    color:#b0c4de;
+    font-size: 40px;
 }
 
-#namedSubheader{
-    color: #f1f1f1;
-    font-size: 30px;
-    position: relative;
-    top: 50%;
-    left: 20%;
-    animation: fadein 4s;
+.namedSubheader{
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    border: 0px solid black;
+    
+    white-space: nowrap;
+
+    margin-top: 23%;    
+    color:#b0c4de;
+    font-size: 20px;
 }
 
 #technologies{
@@ -141,16 +155,16 @@ footer{
 }
 
 .sectionTitle{
-    position: relative;
     font-size: 30px;
-    left: 40px;
-    top: 40px;
+    margin-left: 10%;
+    padding-top: 40px;
 }
 
 
 /*contact form*/
 
 .formWrapper{
+    text-align: center;
     margin: auto;
     margin-top: 150px;
     max-width: 450px;
