@@ -38,10 +38,14 @@ footer{
     width: 100%;
     margin: center;
     text-align: left;
+    position:absolute;
+   
+    background-color: #f1f1f1;
 }
 .footercontent{
     margin-left:10%; 
-    padding-bottom: 5px;
+    
+    
 }
 .content{
     
@@ -176,6 +180,7 @@ footer{
     cursor: text;
     border: 2px solid #0d2a30;
     margin: 3px;
+    padding-bottom: 4px;
 }
 
 /*name*/
@@ -204,6 +209,8 @@ footer{
     line-height: 45px;
     width: 400px;
     height: 45px;
+    margin-bottom: 10%;
+    -webkit-appearance: none;
 }
 
 
@@ -211,3 +218,5 @@ input, textarea{
     /*give the placeholder padding*/
     text-indent: 5px;
 }
+
+
