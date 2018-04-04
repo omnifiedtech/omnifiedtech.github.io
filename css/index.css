@@ -77,7 +77,7 @@ body{
 /*animations to fade in the header*/
 @keyframes fadeHeaderImg{
     from { opacity: 0;    }
-    to   { opacity: 0.03; }
+    to   { opacity: 0.1; }
 }
 
 @keyframes fadein {
