@@ -59,6 +59,12 @@ body{
 .headerImage{
     position: absolute;
 
+    /* parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     opacity: 0.1;
     width: 100%;
     height: 100%;
@@ -217,4 +223,24 @@ input, textarea{
     text-indent: 5px;
 }
 
+#whoarewe{
+    padding-left: 3vw;
+    padding-top: 3vw;
+    color:#fff;
+}
 
+#people{
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 45vw;
+}
+
+.person{
+    display: inline-block;
+}
+
+.portrait{
+    width: 20vw;
+    height: 20vw;
+}
