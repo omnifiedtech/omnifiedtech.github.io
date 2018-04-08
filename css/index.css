@@ -58,7 +58,8 @@ body{
 
 .headerImage{
     position: absolute;
-
+    /*allow clicking past div*/
+    pointer-events: none;
     /* parallax */
     background-attachment: fixed;
     background-position: center;
@@ -66,13 +67,14 @@ body{
     background-size: cover;
 
     opacity: 0.1;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+    width: 100vw;
+    height: 100vh;
     animation: fadeHeaderImg 2s;
 
 
 }
+
+
 
 /*animations to fade in the header*/
 @keyframes fadeHeaderImg{
@@ -223,6 +225,12 @@ input, textarea{
     text-indent: 5px;
 }
 
+/*selected input form*/
+input:focus, textarea:focus{
+    transition: border .3s ease-out;
+    border: 2px solid #657991;
+}
+
 #whoarewe{
     padding-left: 3vw;
     padding-top: 3vw;
@@ -237,10 +245,41 @@ input, textarea{
 }
 
 .person{
+    z-index: 30;
     display: inline-block;
+    margin: 50px auto;
 }
 
 .portrait{
-    width: 20vw;
-    height: 20vw;
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+              
+}
+
+.personName{
+    color: #f1f1f1;
+}
+
+.personLinks{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.linkImg{
+    width: 30px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #999;
+
+    transition: background ease .5s;
+}
+
+.linkImg:hover{
+    background-color: #fff;
+}
+
+#peopleSection{
+    height: auto;
 }
