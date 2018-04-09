@@ -144,6 +144,10 @@ body{
     cursor: pointer;
 }
 
+a{
+    text-decoration:none;
+}
+
 /*special section because it has those buttons*/
 #section2{
     height: auto;

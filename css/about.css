@@ -1,0 +1,19 @@
+body{
+    /*there aint no overflow on this page*/
+    overflow-x: hidden;
+}
+
+#learnMoreContent{
+    margin: 3vmax;
+
+}
+
+h1{
+    font-size: 8vh;
+}
+
+#whatWeDo > p{
+    text-align: center;
+    font-size: 3vh;
+    line-height: 1.5;
+}
