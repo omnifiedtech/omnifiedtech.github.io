@@ -248,14 +248,27 @@ input:focus, textarea:focus{
 .person{
     z-index: 30;
     display: inline-block;
-    margin: 50px auto;
+    margin: 50px 10px;
 }
-@media screen and (min-width:10px) and (max-width:640px) {
+@media screen and (min-width:10px) and (max-width:299px) {
   .person{
     z-index: 30;
     display: inline-block;
     margin: 50px auto;
     margin-left: -50px;
+    margin-top: -10px;
+    margin-top: -40px;
+}
+}
+
+@media screen and (min-width:300px) and (max-width:1200px) {
+  .person{
+    z-index: 30;
+    display: inline-block;
+    margin: 50px auto;
+    
+    margin-top: -10px;
+    margin-top: -40px;
 }
 }
 
@@ -291,7 +304,7 @@ input:focus, textarea:focus{
 }
 
 #peopleSection{
-    height: auto;
+    height: 100%;
 }
 
 .sectionTitlewhite{
