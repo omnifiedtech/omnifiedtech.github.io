@@ -34,6 +34,7 @@ body{
     
 }
 
+
 #footer{
     padding-left: 4vw;
     padding-top: 20vh;
@@ -249,11 +250,19 @@ input:focus, textarea:focus{
     display: inline-block;
     margin: 50px auto;
 }
+@media screen and (min-width:100px) and (max-width:640px) {
+  .person{
+    z-index: 30;
+    display: inline-block;
+    margin: 50px auto;
+    margin-left: -50px;
+}
+}
 
 .portrait{
     opacity: 1;
-    width: 200px;
-    height: 200px;
+    width: 30vh;
+    height: 30vh;
               
 }
 
@@ -270,6 +279,7 @@ input:focus, textarea:focus{
     width: 30px;
     margin: auto;
     display: inline-block;
+
     border-radius: 50%;
     background-color: #999;
 
@@ -282,4 +292,18 @@ input:focus, textarea:focus{
 
 #peopleSection{
     height: auto;
+}
+
+.sectionTitlewhite{
+    font-size: 30px;
+    margin-left: 10%;
+    padding-top: 40px;
+    color: white;
+}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
 }
