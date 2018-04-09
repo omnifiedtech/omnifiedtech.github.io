@@ -250,7 +250,7 @@ input:focus, textarea:focus{
     display: inline-block;
     margin: 50px auto;
 }
-@media screen and (min-width:100px) and (max-width:640px) {
+@media screen and (min-width:10px) and (max-width:640px) {
   .person{
     z-index: 30;
     display: inline-block;
