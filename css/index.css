@@ -138,11 +138,11 @@ html, body {
 }
 
 .sectTwo {
-    background-image: url("../img/oppbot.JPG");
+    background-image: url("../img/oppbot.jpg");
 }
 
 .sectThree{
-    background-image: url("../img/oppbot.JPG");
+    background-image: url("../img/oppbot.jpg");
 
 }
 
@@ -318,3 +318,4 @@ p{
 .test{
     background-color: black;
 }
+
