@@ -5,6 +5,7 @@
   width: device-width ;
   zoom: 1.0 ;
 }
+
 @-ms-viewport {
   width: device-width ;
 }
@@ -38,7 +39,7 @@ body {
     color: #fff;
     font-size: 60px; 
     -webkit-animation-duration: 10s;
-    animation-duration: 3s;
+    animation-duration: 4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
    
@@ -66,7 +67,7 @@ body {
     color: #fff;
     font-size: 40px; 
     -webkit-animation-duration: 10s;
-    animation-duration: 3s;
+    animation-duration: 4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
@@ -85,7 +86,7 @@ body {
     color: #fff;
     font-size: 20px; 
     -webkit-animation-duration: 10s;
-    animation-duration: 3s;
+    animation-duration: 4s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
