@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat ;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+
+#footer{
+    padding-left: 4vw;
+    padding-top: 20vh;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+/*fullscreen section*/
+.section{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*fullscreen dark section*/
+.darkSection{
+    background-color: #161616;
+    z-index: 1;
+}
+
+.headerImage{
+    position: absolute;
+    /*allow clicking past div*/
+    pointer-events: none;
+    /* parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.1;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeHeaderImg 2s;
+
+
+}
+
+
+
+/*animations to fade in the header*/
+@keyframes fadeHeaderImg{
+    from { opacity: 0;    }
+    to   { opacity: 0.1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*header text*/
+.namedHeader{
+    width: 200px;
+    position: absolute;
+    
+    padding-left: 25vw;
+    padding-top: 15vh;
+    border: 0px solid black;
+    white-space: nowrap;
+    margin-top: 19%;
+    color:#fff;
+    
+}
+.namedSubheader{
+    width: 200px;
+    position: absolute;
+    
+    padding-left: 30vw;
+    padding-top: 17vh;
+    border: 0px solid black;
+    white-space: nowrap;
+    margin-top: 23%;
+    color:#fff;
+    
+}
+
+#technologies{
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 600px;
+    
+}
+
+.technology{
+    display: inline-block;
+    margin: 45px;
+}
+
+.techDescription{
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #f1f1f1;
+    color: #161616;
+    border: 2px solid #0D2A30;
+    text-align: center;
+    transition: background-color .2s, color .2s;
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none;
+}
+
+/*special section because it has those buttons*/
+#section2{
+    height: auto;
+    min-height: 100% !important;
+}
+
+.button:hover{
+    background-color: #161616;
+    color: #f1f1f1;
+}
+
+.sectionTitle{
+    font-size: 30px;
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+
+/*contact form*/
+
+.formWrapper{
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+.field{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    color: #0d2a30;
+    box-sizing: border-box;
+    border-radius: 0;
+    cursor: text;
+    border: 2px solid #0d2a30;
+    margin: .5vw;
+    padding-bottom: 4px;
+}
+
+/*name*/
+#field1{
+    width: 23vw;
+    height: 40px;
+    min-width: 200px;
+}
+
+/*email*/
+#field2{
+    min-width: 3vh;
+    width: 23vw;
+    height: 40px;
+    min-width: 200px;
+}
+
+/*message*/
+#field3{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    width: 47.5vw;
+    height: 200px;
+    min-width: 200px;
+}
+
+
+#contactField{
+    min-width: 200px;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 8vh;
+    width: 47.5vw;
+    height: 8vh;
+    margin-bottom: .5vw;
+    -webkit-appearance: none;
+}
+
+
+input, textarea{
+    /*give the placeholder padding*/
+    text-indent: 5px;
+}
+
+/*selected input form*/
+input:focus, textarea:focus{
+    transition: border .3s ease-out;
+    border: 2px solid #657991;
+}
+
+#whoarewe{
+    padding-left: 3vw;
+    padding-top: 3vw;
+    color:#fff;
+}
+
+#people{
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    max-width: 45vw;
+}
+
+.person{
+    z-index: 30;
+    display: inline-block;
+    margin: 50px 10px;
+}
+@media screen and (min-width:10px) and (max-width:299px) {
+  .person{
+    z-index: 30;
+    display: inline-block;
+    margin: 50px auto;
+    margin-left: -50px;
+    margin-top: -10px;
+    margin-top: -40px;
+}
+}
+
+@media screen and (min-width:300px) and (max-width:1200px) {
+  .person{
+    z-index: 30;
+    display: inline-block;
+    margin: 50px auto;
+    
+    margin-top: -10px;
+    margin-top: -40px;
+}
+}
+
+.portrait{
+    opacity: 1;
+    width: 30vh;
+    height: 30vh;
+              
+}
+
+.personName{
+    color: #f1f1f1;
+}
+
+.personLinks{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.linkImg{
+    width: 30px;
+    margin: auto;
+    display: inline-block;
+
+    border-radius: 50%;
+    background-color: #999;
+
+    transition: background ease .5s;
+}
+
+.linkImg:hover{
+    background-color: #fff;
+}
+
+#peopleSection{
+    height: 100%;
+}
+
+.sectionTitlewhite{
+    font-size: 30px;
+    margin-left: 10%;
+    padding-top: 40px;
+    color: white;
+}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
