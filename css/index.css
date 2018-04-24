@@ -23,29 +23,26 @@ body {
     color: #000;
 
 }
-
 .mainbody{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.titlepagetext{
-    width: 200px;
+
+.titleimg{
     position: absolute;
     left: 50%;
-    margin-left: -380px;
-    border: 0px solid black;
-    color: black;
-    white-space: nowrap;
-    margin-top: 19%;    
-    color: #fff;
-    font-size: 60px; 
+    margin-top: 20%;
+    margin-left: -350px;
+    width:100%;
+    max-width: 700px;
     -webkit-animation-duration: 10s;
-    animation-duration: 4s;
+    animation-duration: 5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-   
 }
+
+
 @-webkit-keyframes fadeIn {
      0% {opacity: 0;}
     100% {opacity: 1;}
@@ -56,41 +53,40 @@ body {
     100% {opacity: 1;}
 }
        
-@media screen and (min-width:550px) and (max-width:800px) {
-    .titlepagetext{
-        width: 200px;
+@media screen and (min-width:300px) and (max-width:700px) {
+    .titleimg{
         position: absolute;
         left: 50%;
-        margin-left: -240px;
-        border: 0px solid black;
-        color: black;
-        white-space: nowrap;
-        margin-top: 30%;    
-        color: #fff;
-        font-size: 40px; 
+        margin-top: 40%;
+        margin-left: -150px;
+        width:100%;
+        max-width: 300px;
         -webkit-animation-duration: 10s;
-        animation-duration: 4s;
+        animation-duration: 5s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
     }
+    .mainbody{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
-@media screen and (min-width:10px) and (max-width:550px) {
-    .titlepagetext{
-        width: 200px;
+@media screen and (min-width:10px) and (max-width:300px) {
+    .titleimg{
         position: absolute;
         left: 50%;
-        margin-left: -130px;
-        border: 0px solid black;
-        color: black;
-        white-space: nowrap;
-        margin-top: 60%;    
-        color: #fff;
-        font-size: 20px; 
+        margin-top: 60%;
+        margin-left: -50px;
+        width:100%;
+        max-width: 100px;
         -webkit-animation-duration: 10s;
-        animation-duration: 4s;
+        animation-duration: 5s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
-
+    }
+    .mainbody{
+        margin-left: 0%;
+        margin-right: 0%;
     }
 }
 
@@ -99,19 +95,23 @@ body {
 
 }
 .rocket{
-    margin-top: 90%;
+    width: 100%;
     max-width: 80px;
-    margin-left: -5%;
+    
+    margin-left: 21%;
+    
 
 }   
 .cloud1{
-    max-width: 13vh;    
+    width: 100%;
+    max-width: 500px;    
     padding-top: 70%;
     margin-right: -10px;
      
 }  
 .cloud2{
-    max-width: 16vh;  
+    width: 100%;
+    max-width: 400px;  
     padding-top: 75%;  
     margin-left: 10px;
 }
@@ -125,22 +125,15 @@ body {
     
 }
 .leftr{
-    width: 65%;
+    width: 85%;
 }
 .rightr {
-    width: 35%;
+    width: 15%;
 }
 @media screen and (max-width: 900px) {
 
-    .leftr{
-        width: 100%;
-    }
-    .rightr {
-        width: 0%;
-    }
-    .rocket, .cloud1, .cloud2{
-        opacity: 0;
-    }
+    
+
 
 }
 
@@ -152,28 +145,7 @@ body {
 
 
 }
-.subcolumn {
-    float: left;
-    width: 50%;
-}
 
-.left, .right {
-  width: 40%;
-}
-
-.middle {
-  width: 20%;
-}
-
-
-
-/* Clear floats after the columns */
-.subrow:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
 
 html, body {
     height: 100%;
@@ -193,8 +165,8 @@ html, body {
 }
 
 .sectOne {
-    background-image: url("../img/opp.jpg");
-
+    background-image: url("../img/mttop.jpg");
+    
 }
 
 .sectTwo {
@@ -314,19 +286,128 @@ p{
     line-height: 50px;
     background-color: transparent;
     color: #fff;
-    border: 3px solid #fff;
-   
+    border: 1.5px solid #fff;
     text-align: center;
-    transition: background-color .2s, color .2s, border .2s;
+    transition: background-color .5s, color .5s, border .5s;
     cursor: pointer;
-    margin-top: 23%;
+    
 }
 
 .button:hover{
-    color: #000;
-    border: 4px solid #000;
+    color: #ddd;
+    border: 1.5px solid #ddd;
+
 }
 
 .buttonadjust{
     text-align: center;
 }
+.blockpics{
+    width:100%;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.hovereffect {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+.text {
+  background-color: #eee;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+
+}
+.text:hover{
+    background-color: #ddd;
+}
+.container{
+    position: relative;
+}
+.container:hover .blockpics {
+
+  opacity: 0.3;
+  color: #000;
+}
+
+.container:hover .hovereffect {
+  opacity: 1;
+}
+
+.left{
+    width: 33%;
+}
+.middle{
+    width: 33%;
+}
+.right{
+    width: 33%;
+}
+.biopic{
+    padding-top: 20px;
+    width:100%;
+    max-width: 400px;
+
+
+}
+
+.biocolumn {
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+.gitpic{
+    width:100%;
+    max-width: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.gitpic:hover{
+    opacity: 0.7;
+    max-width: 41px;
+    padding-bottom: 14px;
+}
+.blocktitle{
+    padding-bottom: 20px;
+}
+.captitle{
+    padding-top: 60px;
+}
+.caps{
+    color: #000;
+}
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+}
+.spacetoph1{
+    padding-top: 110px
+}
+.listcaps{
+    padding-top: 20px; 
+    color: #000;
+}
+
+.listcaps:hover{
+    color:#777;
+}
+
+
