@@ -247,11 +247,12 @@ footer {
 
 
 /*---make a basic box ---*/
-h1, h2, h3, h4,h5, h6{
+h1,h2, h3, h4,h5, h6{
     margin-top: 20px;
-
-
 }
+
+
+
 p{
     margin-top: 5px;
 
@@ -370,6 +371,12 @@ p{
     margin-right: 5%;
     
 }
+.capcolumn {
+    float: left;
+    width: 50%;
+    
+    
+}
 
 .gitpic{
     width:100%;
@@ -399,7 +406,10 @@ li{
     list-style: none;
 }
 .spacetoph1{
-    padding-top: 110px
+    padding-top: 110px;
+}
+.spacebottom{
+    padding-bottom: 20px;
 }
 .listcaps{
     padding-top: 20px; 
@@ -410,4 +420,14 @@ li{
     color:#777;
 }
 
-
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .biocolumn {
+        width: 100%;
+    }
+    .capcolumn {
+        width: 100%;
+    }
+}
