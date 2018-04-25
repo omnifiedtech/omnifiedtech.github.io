@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+    width: device-width ;
+    zoom: 1.0 ;
 }
 
 @-ms-viewport {
-  width: device-width ;
+    width: device-width ;
 }
 
 body {
@@ -44,15 +44,15 @@ body {
 
 
 @-webkit-keyframes fadeIn {
-     0% {opacity: 0;}
+    0% {opacity: 0;}
     100% {opacity: 1;}
 }
-         
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
-       
+
 @media screen and (min-width:300px) and (max-width:700px) {
     .titleimg{
         position: absolute;
@@ -107,7 +107,7 @@ body {
     max-width: 500px;    
     padding-top: 70%;
     margin-right: -10px;
-     
+    
 }  
 .cloud2{
     width: 100%;
@@ -228,12 +228,12 @@ html, body {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
- 
+
 
 
 
@@ -314,21 +314,21 @@ p{
 }
 
 .hovereffect {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
 }
 .text {
-  background-color: #eee;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
+    background-color: #eee;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
 
 }
 .text:hover{
@@ -339,23 +339,19 @@ p{
 }
 .container:hover .blockpics {
 
-  opacity: 0.3;
-  color: #000;
+    opacity: 0.3;
+    color: #000;
 }
 
 .container:hover .hovereffect {
-  opacity: 1;
+    opacity: 1;
 }
 
-.left{
-    width: 33%;
+.projectsCol{
+    width: calc(100% / 3);
 }
-.middle{
-    width: 33%;
-}
-.right{
-    width: 33%;
-}
+
+
 .biopic{
     padding-top: 20px;
     width:100%;
