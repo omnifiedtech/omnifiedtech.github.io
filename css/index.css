@@ -130,13 +130,6 @@ body {
 .rightr {
     width: 15%;
 }
-@media screen and (max-width: 900px) {
-
-    
-
-
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -400,6 +393,9 @@ a{
 }
 li{
     list-style: none;
+    padding-top: 20px; 
+    color: #000;
+    text-decoration: none;
 }
 .spacetoph1{
     padding-top: 110px;
@@ -426,4 +422,125 @@ li{
     .capcolumn {
         width: 100%;
     }
+    .contactcolumn {
+        width: 100%;
+    }
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+        
+}
+
+.tooltip .tooltiptext {
+    text-decoration: none;
+    visibility: visible;
+    
+    background-color: white;
+    color: #000;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 0%;
+    transition: opacity 0.5s;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+    ;
+    opacity: 1;
+}
+/*contact form*/
+
+.formWrapper{
+    width:100%;
+    max-width:600px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+
+
+.field{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    color: black;
+    box-sizing: border-box;
+    border-radius: 0;
+    cursor: text;
+    border: 1px solid black;
+    margin: 3px;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+
+
+}
+
+/*message*/
+#message{
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    padding-left: 2px;
+
+}
+
+.contactbutt{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    transition: background-color .5s, color .5s, border .5s;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #000;
+    padding-left: 1px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.contactbutt:hover{
+    color: #888;
+    border: 1px solid #888;
+}
+
+
+/*/contact form*/
+.west{
+    width: 50%;
+    margin-right: 5%;
+}
+.south {
+    width: 40%;
+    margin-left: 5%;
+}
+.contactcolumn {
+    float: left;
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .contactcolumn {
+        width: 100%;
+    }
+}
+
+.formatdiv{
+    margin-top: 15px;
 }
